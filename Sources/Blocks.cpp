@@ -585,7 +585,5 @@ int kore(int argc, char** argv) {
 	lastDownTime = System::time();
 	Kore::System::start();
     
-    System::stop();
-
 	return 0;
 }
