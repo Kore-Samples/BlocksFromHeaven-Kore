@@ -537,7 +537,7 @@ namespace {
     }
 }
 
-int kore(int argc, char** argv) {
+int kickstart(int argc, char** argv) {
     int w = 272;
     int h = 480;
 
