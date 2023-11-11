@@ -1,5 +1,3 @@
-#include "pch.h"
-
 #include <Kore/IO/FileReader.h>
 #include <Kore/Graphics4/Graphics.h>
 #include <Kore/Graphics2/Graphics.h>
@@ -355,7 +353,7 @@ namespace {
 		}
 	}
 
-	void update() {
+	void update(void *data) {
 		Audio2::update();
 		if (state == InGameState) {
 			lastleft = left;
@@ -550,7 +548,7 @@ int kickstart(int argc, char** argv) {
 	Audio2::init();
 	Random::init(static_cast<int>(System::time() * 1000));
 
-	Kore::System::setCallback(update);
+	Kore::System::setCallback(update, nullptr);
 
 	music = new SoundStream("Sound/blocks.ogg", true);
     rotateSound = new Sound("Sound/rotate.wav");
