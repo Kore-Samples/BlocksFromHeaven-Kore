@@ -1,4 +1,4 @@
 [submodule "Kore"]
 	path = Kore
 	url = https://github.com/Kode/Kinc.git
-	branch = master
+	branch = main
