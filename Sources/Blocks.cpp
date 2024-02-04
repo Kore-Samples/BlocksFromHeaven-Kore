@@ -543,9 +543,7 @@ int kickstart(int argc, char** argv) {
     
     g2 = new Graphics2::Graphics2(w, h);
 
-    //Sound::init();
 	Audio1::init();
-	Audio2::init();
 	Random::init(static_cast<int>(System::time() * 1000));
 
 	Kore::System::setCallback(update, nullptr);
